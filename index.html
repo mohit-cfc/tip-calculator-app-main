@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <h1 class="splitter">SPLI <br />TTER</h1>
+    <main class="main-content">
+      <div class="left-content">
+        <h2>Bill</h2>
+        <div class="amount-input">
+          <i class="fas fa-dollar-sign"></i>
+          <input type="number" required id="input-amount" placeholder="0" />
+        </div>
+        <h2>Select Tip%</h2>
+        <div class="button-div">
+          <div>
+            <button value="5" id="percent">05%</button>
+            <button value="10" id="percent">10%</button>
+            <button value="15" id="percent">15%</button>
+          </div>
+          <div>
+            <button value="25" id="percent">25%</button>
+            <button value="50" id="percent">50%</button>
+            <input
+              type="number"
+              placeholder="Custom"
+              class="custom"
+              id="custom"
+            />
+          </div>
+        </div>
+        <h2>Number of People</h2>
+        <div class="people-input">
+          <i class="fas fa-user"></i>
+          <input type="number" required id="people" value="1" />
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="tip-amount">
+          <h2>Tip Amount <br /><span class="grey">/person</span></h2>
+          <h1>$<span id="tip-amount">0.00</span></h1>
+        </div>
+        <div class="total">
+          <h2>Total<br /><span class="grey">/person</span></h2>
+          <h1>$<span id="total-amount">0.00</span></h1>
+        </div>
+        <button class="reset" id="reset">RESET</button>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
